@@ -82,6 +82,8 @@ async function startServer() {
   } else {
     // Statics for production build
     const distPath = path.join(process.cwd(), 'dist');
+    // Serve generated/saved campaign images directly to prevent 404s in production container
+    app.use('/src/assets/images', express.static(path.join(process.cwd(), 'src/assets/images')));
     app.use(express.static(distPath));
     app.get('*all', (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
