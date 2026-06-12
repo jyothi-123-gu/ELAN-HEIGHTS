@@ -1,0 +1,6 @@
+{
+  "name": "Élan Heights",
+  "description": "Ultra-premium digital storefront and e-commerce showcase for Élan Heights, a luxury global footwear universe for girls and women of all ages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
